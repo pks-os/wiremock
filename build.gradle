@@ -67,7 +67,7 @@ dependencies {
       "com.fasterxml.jackson.core:jackson-annotations",
       "com.fasterxml.jackson.core:jackson-databind",
       "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
-  api "org.apache.httpcomponents.client5:httpclient5:5.3.1"
+  api "org.apache.httpcomponents.client5:httpclient5:5.4.1"
   api "org.xmlunit:xmlunit-core:$versions.xmlUnit"
   api "org.xmlunit:xmlunit-legacy:$versions.xmlUnit", {
     exclude group: 'junit', module: 'junit'
@@ -202,7 +202,7 @@ allprojects {
     mavenCentral()
   }
 
-  version = '3.9.2'
+  version = '3.10.0'
 
   compileJava {
     options.encoding = 'UTF-8'
@@ -327,6 +327,7 @@ shadowJar {
   exclude 'META-INF/maven/**'
   exclude 'META-INF/versions/17/**'
   exclude 'META-INF/versions/21/**'
+  exclude 'META-INF/versions/22/**'
   exclude 'module-info.class'
   exclude 'handlebars-*.js'
 }
